@@ -3,6 +3,8 @@ package dev.timer.jvm.annotation.custom;
 import dev.timer.jvm.annotation.custom.annotation.ModelDescriptionPrint;
 import dev.timer.jvm.annotation.custom.annotation.ModelDescriptionPrints;
 
+import java.time.LocalDate;
+
 public class Car {
     private final String model;
     // 1980 ~ 2025
@@ -47,6 +49,15 @@ public class Car {
 
     public Integer getYear() {
         return year;
+    }
+
+    private boolean isNeedMaintenance() {
+        return LocalDate.of(year, 1, 1).isBefore(LocalDate.now().minusYears(5));
+    }
+
+    public boolean isNeedChangOil() {
+        // oil 교체는 1개월마다 해야함
+        return LocalDate.of(year, 1, 1).isBefore(LocalDate.now().minusYears(1));
     }
 
     @Override
