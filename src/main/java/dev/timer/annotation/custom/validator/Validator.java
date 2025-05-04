@@ -1,7 +1,7 @@
-package dev.timer.jvm.annotation.custom.validator;
+package dev.timer.annotation.custom.validator;
 
-import dev.timer.jvm.annotation.custom.CarRequest;
-import dev.timer.jvm.annotation.custom.annotation.YearRange;
+import dev.timer.annotation.custom.CarRequest;
+import dev.timer.annotation.custom.annotation.YearRange;
 
 import java.lang.reflect.Field;
 

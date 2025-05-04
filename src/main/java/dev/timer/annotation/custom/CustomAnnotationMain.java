@@ -1,4 +1,4 @@
-package dev.timer.jvm.annotation.custom;
+package dev.timer.annotation.custom;
 
 public class CustomAnnotationMain {
 

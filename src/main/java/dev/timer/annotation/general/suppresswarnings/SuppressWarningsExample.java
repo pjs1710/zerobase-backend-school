@@ -1,4 +1,4 @@
-package dev.timer.jvm.annotation.general.suppresswarnings;
+package dev.timer.annotation.general.suppresswarnings;
 
 import java.util.ArrayList;
 import java.util.List;

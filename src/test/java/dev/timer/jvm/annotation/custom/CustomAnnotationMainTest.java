@@ -1,5 +1,8 @@
 package dev.timer.jvm.annotation.custom;
 
+import dev.timer.annotation.custom.Car;
+import dev.timer.annotation.custom.CarFactory;
+import dev.timer.annotation.custom.CarRequest;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

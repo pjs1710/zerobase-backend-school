@@ -1,4 +1,4 @@
-package dev.timer.jvm.annotation.general.override;
+package dev.timer.annotation.general.override;
 
 public class OverrideMain {
 

@@ -1,6 +1,6 @@
-package dev.timer.jvm.annotation.custom;
+package dev.timer.annotation.custom;
 
-import dev.timer.jvm.annotation.custom.annotation.YearRange;
+import dev.timer.annotation.custom.annotation.YearRange;
 
 public class CarRequest {
     private final String model;

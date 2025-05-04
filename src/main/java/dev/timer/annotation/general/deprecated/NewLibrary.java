@@ -1,4 +1,4 @@
-package dev.timer.jvm.annotation.general.deprecated;
+package dev.timer.annotation.general.deprecated;
 
 public class NewLibrary {
 

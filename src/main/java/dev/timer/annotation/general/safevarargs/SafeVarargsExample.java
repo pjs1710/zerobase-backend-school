@@ -1,4 +1,4 @@
-package dev.timer.jvm.annotation.general.safevarargs;
+package dev.timer.annotation.general.safevarargs;
 
 public class SafeVarargsExample {
     @SafeVarargs // 사용 추천 X

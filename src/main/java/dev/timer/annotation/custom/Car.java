@@ -1,7 +1,7 @@
-package dev.timer.jvm.annotation.custom;
+package dev.timer.annotation.custom;
 
-import dev.timer.jvm.annotation.custom.annotation.ModelDescriptionPrint;
-import dev.timer.jvm.annotation.custom.annotation.ModelDescriptionPrints;
+import dev.timer.annotation.custom.annotation.ModelDescriptionPrint;
+import dev.timer.annotation.custom.annotation.ModelDescriptionPrints;
 
 import java.time.LocalDate;
 

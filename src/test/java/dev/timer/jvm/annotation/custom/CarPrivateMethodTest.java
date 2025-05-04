@@ -1,5 +1,6 @@
 package dev.timer.jvm.annotation.custom;
 
+import dev.timer.annotation.custom.Car;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Method;

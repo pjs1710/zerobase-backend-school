@@ -1,6 +1,6 @@
-package dev.timer.jvm.annotation.custom;
+package dev.timer.annotation.custom;
 
-import dev.timer.jvm.annotation.custom.validator.Validator;
+import dev.timer.annotation.custom.validator.Validator;
 
 public class CarFactory {
 
