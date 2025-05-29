@@ -8,7 +8,7 @@ import java.util.Map;
 public class StringTest {
 
     @Test
-    void java8() {
+    void java8() { // 문자열 연결
         // String.join
         String str1 = String.join(",", "a", "b", "c");
         System.out.println(str1);
@@ -20,28 +20,28 @@ public class StringTest {
 
     @Test
     void java11() {
-        // String.isBlank
+        // String.isBlank : 공백 문자열 확인
         System.out.println(" ".isBlank()); // true
         System.out.println("abc".isBlank()); // false
         System.out.println("".isBlank()); // true
         System.out.println("a b c".isBlank()); // false
 
-        // String.strip, string.stripLeading, string.stripTrailing
+        // String.strip, string.stripLeading, string.stripTrailing : 공백 제거
         System.out.println("   abc   ".strip()); // "abc"
         System.out.println("   abc   ".stripLeading()); // "abc   "
         System.out.println("   abc   ".stripTrailing()); // "   abc"
 
-        // String.lines
+        // String.lines : 개행문자 단위로 분리
         String str = "abc\ndef\nghi";
         str.lines().forEach(System.out::println);
 
-        // String.repeat
+        // String.repeat : 문자열 반복
         System.out.println("abc".repeat(3)); // "abcabcabc"
     }
 
     @Test
     void java13() {
-        // String TextBlock
+        // String TextBlock : 여러줄 문자열 지원, \s는 공백 유지
         String textBlock = """
                 Hello, \s
                 World!
@@ -52,7 +52,7 @@ public class StringTest {
 
     @Test
     void java14() {
-        // String.transform
+        // String.transform // 람다 형식으로 로직 체이닝
         String str = "hello";
         String result = str.transform(s -> s.toUpperCase());
         System.out.println(result); // "HELLO"
@@ -66,7 +66,7 @@ public class StringTest {
 
     @Test
     void java16() {
-        // String formatting .formatted
+        // String formatting .formatted, String.format의 간편한 형태
         String formattedString = "My name is %s and I am %d years old".formatted("John", 30);
         System.out.println(formattedString);
 

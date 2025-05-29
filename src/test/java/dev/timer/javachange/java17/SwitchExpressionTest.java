@@ -79,7 +79,7 @@ public class SwitchExpressionTest {
         System.out.println(type1);
 
         // new
-        String type2 = switch (targetDay) {
+        String type2 = switch (targetDay) { // 기존 switch 문보다 코드가 간결하고 가독성이 좋다
             case MONDAY -> "월요일";
             case TUESDAY -> "화요일";
             case WEDNESDAY -> "수요일";

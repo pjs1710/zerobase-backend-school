@@ -14,7 +14,7 @@ public class CollectionFactoryTest {
         List<String> oldList = Collections.unmodifiableList(Arrays.asList("apple", "banana", "cherry"));
 
         // new - 불변
-        List<String> newList = List.of("apple", "banana", "cherry");
+        List<String> newList = List.of("apple", "banana", "cherry"); // List.of로 불변 객체 생성
 
         assertThat(oldList.equals(newList));
     }
@@ -28,7 +28,7 @@ public class CollectionFactoryTest {
         Map<String, String> oldMap = Collections.unmodifiableMap(dataMap);
 
         // new - 불변
-        Map<String, String> newMap = Map.of(
+        Map<String, String> newMap = Map.of( // Map.of로 불변 객체 생성
                 "key1", "value1",
                 "key2", "value2"
         );
