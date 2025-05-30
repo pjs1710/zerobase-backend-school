@@ -24,6 +24,7 @@ public class PersonMain {
 
     public static void main(String[] args) {
         Person person = new Person("John Doe", 30, "F");
-        System.out.println(person);
+        String result = JsonSerializer.printJsonSerializer(person);
+        System.out.println(result);
     }
 }
